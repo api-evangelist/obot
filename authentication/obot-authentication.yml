@@ -1,0 +1,24 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.obot.ai/configuration/auth-providers/
+docs: https://docs.obot.ai/configuration/auth-providers/
+summary:
+  types: [oauth2, openIdConnect]
+  model: >-
+    Obot authenticates users via external OAuth/OIDC identity providers and
+    issues platform API tokens (unified API-key model since v0.23.0) for
+    connecting through the MCP gateway. MCP servers behind the gateway are
+    fronted by OAuth 2.1 (mcp-oauth-proxy) with Dynamic Client Registration and
+    consent screens.
+identity_providers:
+  - name: Google
+    tier: open-source
+  - name: GitHub
+    tier: open-source
+  - name: Okta
+    tier: enterprise
+  - name: Microsoft Entra ID
+    tier: enterprise
+api_tokens:
+  since: v0.23.0
+  note: A single API-key model covers connecting to and through the gateway.

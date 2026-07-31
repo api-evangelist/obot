@@ -1,0 +1,37 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/obot-platform/obot/releases
+scheme: semver
+current: v0.23.4
+entries:
+  - version: v0.23.4
+    date: '2026-07-14'
+    breaking: false
+    highlights:
+      - Dependency bump (kinm) and maintenance fixes.
+  - version: v0.23.3
+    date: '2026-06-25'
+    breaking: false
+    highlights:
+      - Bump nanobot for additional logging; maintenance.
+  - version: v0.23.2
+    date: '2026-06-22'
+    breaking: false
+    security: true
+    highlights:
+      - "Security: fix OAuth Dynamic Client Registration API token theft via audience confusion (High)."
+      - "Security: MCP Registry API was readable without authentication (Moderate)."
+      - "Security: Server-Side Request Forgery via remote MCP server URL (High)."
+  - version: v0.23.1
+    date: '2026-06-18'
+    breaking: false
+    highlights:
+      - Allow OAuth clients that don't supply a resource to connect.
+      - Dependency and build-workflow maintenance.
+  - version: v0.23.0
+    date: '2026-06-17'
+    breaking: true
+    highlights:
+      - API tokens now replace auth tokens — a single API-key model covers connecting through the gateway.
+      - MCP OAuth flows now show a consent screen, signaling when a server requires second-level auth.
+      - Model Access Policies now accept wildcard suffix patterns (e.g. claude-haiku-4-5*).

@@ -1,0 +1,32 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/obot-platform
+notes: >-
+  Obot distributes first-party software as Go binaries via a Homebrew tap,
+  container images, and GitHub releases rather than language package registries.
+  The public PyPI/npm "nanobot" and "obot" names are unrelated third-party
+  packages and are NOT catalogued here. obot-mcp-server is a Python MCP server
+  distributed from source on GitHub.
+packages:
+  - language: go
+    registry: homebrew
+    name: nanobot
+    tap: obot-platform/tap
+    url: https://github.com/obot-platform/nanobot
+    install: brew install obot-platform/tap/nanobot
+    description: Standalone open-source MCP (and MCP-UI) host / agent framework CLI.
+    official: true
+  - language: go
+    registry: github-releases
+    name: obot
+    url: https://github.com/obot-platform/obot/releases
+    install: docker run ghcr.io/obot-platform/obot
+    description: Obot MCP Gateway / platform server, distributed as container images and release binaries.
+    official: true
+  - language: python
+    registry: github
+    name: obot-mcp-server
+    url: https://github.com/obot-platform/obot-mcp-server
+    install: pip install git+https://github.com/obot-platform/obot-mcp-server
+    description: Python MCP server implementation from the Obot platform org.
+    official: true

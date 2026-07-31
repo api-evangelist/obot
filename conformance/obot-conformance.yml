@@ -1,0 +1,31 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/obot-platform/obot
+standards:
+  - id: mcp
+    name: Model Context Protocol
+    conforms: true
+    evidence: >-
+      Obot is an MCP gateway/host implementing the Model Context Protocol; hosts,
+      catalogs, and proxies MCP servers (docs.obot.ai/concepts/mcp-hosting).
+  - id: oauth2
+    name: OAuth 2.0 / 2.1
+    conforms: true
+    evidence: >-
+      Centralized OAuth access control for MCP servers; ships mcp-oauth-proxy
+      (OAuth 2.1) and oauth2-proxy; release notes reference OAuth Dynamic Client
+      Registration and consent screens.
+  - id: oauth-dcr
+    name: OAuth 2.0 Dynamic Client Registration (RFC 7591)
+    conforms: true
+    evidence: Release v0.23.x notes reference OAuth Dynamic Client Registration for MCP clients.
+  - id: oidc
+    name: OpenID Connect
+    conforms: true
+    evidence: >-
+      Integrates external identity providers (Google, GitHub, and enterprise
+      Okta / Microsoft Entra) for authentication.
+  - id: rfc9457-problem-details
+    name: RFC 9457 Problem Details
+    conforms: false
+    evidence: No public OpenAPI or documented problem+json error contract found.

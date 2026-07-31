@@ -1,0 +1,22 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/obot-platform/obot/releases
+versioning:
+  scheme: semver
+  current: v0.23.4
+  released: '2026-07-14'
+  channel: pre-1.0 (0.x); frequent minor/patch releases with -rc candidates
+  docs: https://github.com/obot-platform/obot/releases
+release_cadence: >-
+  Active — multiple patch releases per month, tagged release candidates (-rc1)
+  before each stable tag.
+change_management: >-
+  Open-source project under heavy development; some minor releases introduce
+  breaking changes (e.g. v0.23.0 replaced auth tokens with a unified API-token
+  model). No formal published deprecation/sunset policy or SLA found.
+deprecation:
+  policy_url: null
+  sunset_header: null
+sla:
+  url: null
+status_page: null

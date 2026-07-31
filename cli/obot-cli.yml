@@ -1,0 +1,29 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/obot-platform/nanobot
+clis:
+  - name: nanobot
+    binary: nanobot
+    description: >-
+      Standalone open-source MCP host CLI for building and running MCP / MCP-UI
+      powered agents and chatbots. Combines MCP servers with an LLM and context
+      to present an agent experience.
+    repo: https://github.com/obot-platform/nanobot
+    license: Apache-2.0
+    install:
+      - method: homebrew
+        command: brew install obot-platform/tap/nanobot
+    usage: nanobot run <config.yaml>
+    config: YAML config declaring MCP servers, models, and the agent surface.
+  - name: obot
+    binary: obot
+    description: >-
+      Obot MCP Gateway / platform server and administration surface. Runs the
+      gateway, MCP catalog, access-control and audit layer; deployed via Docker
+      or Kubernetes/Helm.
+    repo: https://github.com/obot-platform/obot
+    license: MIT
+    install:
+      - method: docker
+        command: docker run ghcr.io/obot-platform/obot
+    docs: https://docs.obot.ai/installation/overview/

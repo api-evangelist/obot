@@ -1,7 +1,28 @@
 aid: obot
 name: Obot
-description: Obot is a company surfaced as a portfolio company of mayfield and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Obot AI (formerly Acorn Labs) builds an open-source MCP Gateway and platform
+  that gives organizations a central control point for Model Context Protocol
+  (MCP) servers and AI agent Skills. Obot lets teams host local, remote, and
+  multi-tenant MCP servers, publish an internal MCP catalog/registry, enforce
+  OAuth-based access control and policy, and capture audit logs across every
+  agent integration. It ships a built-in chat client with multi-model support,
+  an enterprise edition with Okta and Microsoft Entra identity, and the
+  companion Nanobot framework for building standalone MCP hosts. Written in Go
+  and MIT-licensed, Obot self-hosts on Docker or Kubernetes.
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://obot.ai/wp-content/uploads/2026/05/obot_linkedin_01-1500x396-2.png
 url: https://raw.githubusercontent.com/api-evangelist/obot/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +32,68 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- MCP
+- Model Context Protocol
+- AI Agents
+- MCP Gateway
+- Open Source
+- Agent Governance
+- Access Control
+- Developer Tools
 apis: []
+common:
+- type: VulnerabilityDisclosure
+  url: security/obot-vulnerability-disclosure.yml
+- type: Security
+  url: https://github.com/obot-platform/obot/security/advisories
+- type: DomainSecurity
+  url: security/obot-domain-security.yml
+- type: Website
+  url: https://obot.ai/
+- type: Portal
+  url: https://docs.obot.ai/
+- type: Documentation
+  url: https://docs.obot.ai/
+- type: GettingStarted
+  url: https://docs.obot.ai/installation/overview/
+- type: GitHubOrganization
+  url: https://github.com/obot-platform
+- type: Blog
+  url: https://obot.ai/blog/
+- type: Support
+  url: https://obot.ai/contact-us/
+- type: TermsOfService
+  url: https://obot.ai/terms-of-use/
+- type: PrivacyPolicy
+  url: https://obot.ai/privacy-policy/
+- type: Packages
+  url: packages/obot-packages.yml
+- type: SDKs
+  url: packages/obot-packages.yml
+- type: Authentication
+  url: authentication/obot-authentication.yml
+- type: CLI
+  url: cli/obot-cli.yml
+- type: MCPServer
+  url: mcp/obot-mcp.yml
+- type: LLMsTxt
+  url: llms/obot-llms.txt
+- type: Conformance
+  url: conformance/obot-conformance.yml
+- type: Lifecycle
+  url: lifecycle/obot-lifecycle.yml
+- type: ChangeLog
+  url: changelog/obot-changelog.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 10
+  pass: local-v1

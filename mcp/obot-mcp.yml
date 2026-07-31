@@ -1,0 +1,55 @@
+generated: '2026-07-20'
+method: searched
+status: published
+source: https://github.com/obot-platform
+summary: >-
+  Obot is itself an MCP Gateway / platform — its core product is the hosting,
+  cataloguing, and governance of Model Context Protocol servers. Rather than a
+  single hosted MCP endpoint, Obot provides an MCP gateway that fronts many
+  servers with OAuth access control and audit logging, an internal MCP
+  catalog/registry, and a set of first-party open-source MCP servers for common
+  SaaS systems. Obot self-hosts, so the gateway URL is per-deployment.
+gateway:
+  name: Obot MCP Gateway
+  role: gateway
+  transports: [http, sse, stdio]
+  features:
+    - Centralized OAuth 2.1 authentication and access control for all MCP servers
+    - MCP catalog / registry for discovery and documentation
+    - Policy enforcement, audit and compliance logging
+    - Local, remote, and multi-tenant MCP server hosting
+    - Dynamic Client Registration and MCP OAuth consent screens
+  docs: https://docs.obot.ai/concepts/mcp-hosting/
+  repo: https://github.com/obot-platform/obot
+first_party_mcp_servers:
+  - name: google-mcp
+    language: python
+    repo: https://github.com/obot-platform/google-mcp
+  - name: salesforce-mcp
+    language: python
+    repo: https://github.com/obot-platform/salesforce-mcp
+  - name: snowflake-mcp
+    language: python
+    repo: https://github.com/obot-platform/snowflake-mcp
+  - name: slack-mcp
+    language: javascript
+    repo: https://github.com/obot-platform/slack-mcp
+  - name: microsoft-office-365-mcp
+    language: go
+    repo: https://github.com/obot-platform/microsoft-office-365-mcp
+  - name: wordpress-mcp-server
+    language: python
+    repo: https://github.com/obot-platform/wordpress-mcp-server
+  - name: cloud-run-mcp
+    language: javascript
+    repo: https://github.com/obot-platform/cloud-run-mcp
+supporting_components:
+  - name: mcp-catalog
+    description: MCP server registry / catalog UI.
+    repo: https://github.com/obot-platform/mcp-catalog
+  - name: mcp-oauth-proxy
+    description: OAuth 2.1 proxy for MCP servers.
+    repo: https://github.com/obot-platform/mcp-oauth-proxy
+  - name: nanobot
+    description: Standalone open-source MCP host for building agents.
+    repo: https://github.com/obot-platform/nanobot
