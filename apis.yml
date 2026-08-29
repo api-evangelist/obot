@@ -10,6 +10,17 @@ description: >-
   an enterprise edition with Okta and Microsoft Entra identity, and the
   companion Nanobot framework for building standalone MCP hosts. Written in Go
   and MIT-licensed, Obot self-hosts on Docker or Kubernetes.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
