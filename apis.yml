@@ -49,7 +49,7 @@ tags:
 - MCP
 - AI Agents
 - MCP Gateway
-- Open-Source
+- Open Source
 - Agent Governance
 - Access Control
 - Developer Tools
@@ -63,6 +63,7 @@ tags_raw:
 - Agent Governance
 - Access Control
 - Developer Tools
+- Open-Source
 apis: []
 common:
 - type: VulnerabilityDisclosure
